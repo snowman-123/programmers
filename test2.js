@@ -1,8 +1,5 @@
-function solution(X, Y) {
-  var answer = "";
+const str = "123";
+const arr = [1, 2, 3];
+console.log(...str);
 
-  const mapx = X.split("").map(Number);
-  console.log(mapx);
-  return answer;
-}
-solution("5525", "1255");
+console.log(+arr);
