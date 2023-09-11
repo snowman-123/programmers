@@ -14,6 +14,7 @@ function solution(participant, completion) {
   // console.log(answer);
 }
 solution(["mislav", "stanko", "mislav", "ana"], ["stanko", "ana", "mislav"]);
+
 var solution = (participant, completion) =>
   participant.find(
     (name) => !completion[name]--,

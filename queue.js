@@ -4,6 +4,7 @@ class Node {
     this.next = null;
   }
 }
+
 class Queue {
   constructor() {
     this.front = null;
@@ -54,31 +55,20 @@ class Queue {
   size() {
     return this.count;
   }
-  getSum() {
-    let sum = 0;
-    while (!this.isEmpty()) {
-      sum += this.dequeue();
-    }
-    return sum;
-  }
 }
-const arr = [11, 22, 33];
-const q = new Queue();
-q.enqueue(arr.pop());
-q.enqueue(arr.pop());
-// q.enqueue(arr.pop());
-// q.dequeue();
+// export default Queue;
+// module.exports = Queue;
+// const q = require("./queue");
 
-console.log(q);
-const a = q.peek();
-console.log(a, q.peek());
-console.log(q);
-
-// getSum class 밖에서하기
-// let sum = 0;
-// let current = q.front;
-// while (current) {
-//   sum += current.data;
-//   current = current.next;
-// }
-// console.log(sum);
+// 큐 생성 및 사용 예시
+const queue = new Queue();
+queue.enqueue(1);
+queue.enqueue(2);
+queue.enqueue(3);
+console.log(queue);
+console.log(queue.dequeue()); // 1
+console.log(queue.dequeue()); // 1
+console.log(queue.dequeue()); // 1
+console.log(queue.size()); // 2
+console.log(queue);
+const q = require("./queue");
